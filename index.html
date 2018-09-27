@@ -1,43 +1,51 @@
-<style>
-  img {
-    position:absolute;
-    width:200px;
-    height:200px;
-    top:50%;
-    left:50%;
-    margin-top:-100px;
-    margin-left:-100px;
-    animation-name: spin;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes spin {
-      from {transform:rotate(0deg);}
-      to {transform:rotate(360deg);}
-  }
-  div {
-    color: red;
-    font-weight: bold;
-    font-style: italic;
-    position:absolute;
-    width:200px;
-    height:0px;
-    top:50%;
-    left:50%;
-    margin-left:-100px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 30px;
-    font-family: sans-serif;
-    animation-name: blinker;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
-    animation-duration: 0.7s;
-  }
-  @keyframes blinker {
-    50% { opacity: 0.0; }
-  }
-</style>
-<img src="v8.svg" width=200 height=200 >
-<div>Because Fast</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        position:absolute;
+        width:200px;
+        height:200px;
+        top:50%;
+        left:50%;
+        margin-top:-100px;
+        margin-left:-100px;
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes spin {
+          from {transform:rotate(0deg);}
+          to {transform:rotate(360deg);}
+      }
+      div {
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        position:absolute;
+        width:200px;
+        height:0px;
+        top:50%;
+        left:50%;
+        margin-left:-100px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 30px;
+        font-family: sans-serif;
+        animation-name: blinker;
+        animation-iteration-count: infinite;
+        animation-timing-function: step-start;
+        animation-duration: 0.7s;
+      }
+      @keyframes blinker {
+        50% { opacity: 0.0; }
+      }
+    </style>
+    <meta http-equiv="refresh" content="300">
+  </head>
+  <body>
+    <img src="v8.svg" width=200 height=200 >
+    <div>Because Fast</div>
+  </body>
+</html>
