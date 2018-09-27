@@ -16,7 +16,7 @@
       from {transform:rotate(0deg);}
       to {transform:rotate(360deg);}
   }
-  div {
+  .because {
     color: red;
     font-weight: bold;
     font-style: italic;
@@ -38,6 +38,56 @@
   @keyframes blinker {
     50% { opacity: 0.0; }
   }
+
+  .raster {
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    background-color: #ee0;
+    animation-name: sine;
+    animation-iteration-count: infinite;
+    animation-duration: 2.0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform: rotateZ(0);
+  }
+
+  @keyframes sine {
+     0% { top: 85%; }
+     5% { top: 83%; }
+    10% { top: 77%; }
+    15% { top: 68%; }
+    20% { top: 57%; }
+    25% { top: 45%; }
+    30% { top: 32%; }
+    35% { top: 21%; }
+    40% { top: 12%; }
+    45% { top:  6%; }
+    50% { top:  5%; }
+    55% { top:  6%; }
+    60% { top: 12%; }
+    65% { top: 21%; }
+    70% { top: 32%; }
+    75% { top: 44%; }
+    80% { top: 57%; }
+    85% { top: 68%; }
+    90% { top: 77%; }
+    95% { top: 83%; }
+   100% { top: 85%; }
+  }
+
+  ._1 { z-index: -1; background-image: linear-gradient(red, white, red); animation-delay: .0s; }
+  ._2 { z-index: -2; background-image: linear-gradient(orange, white, orange); animation-delay: .05s; }
+  ._3 { z-index: -3; background-image: linear-gradient(yellow, white, yellow); animation-delay: .1s; }
+  ._4 { z-index: -4; background-image: linear-gradient(green, white, green); animation-delay: .15s; }
+  ._5 { z-index: -5; background-image: linear-gradient(blue, white, blue); animation-delay: .2s; }
+  ._6 { z-index: -6; background-image: linear-gradient(purple, white, purple); animation-delay: .25s; }
 </style>
 <img src="v8.svg" width=200 height=200 >
-<div>Because Fast</div>
+<div class="because">Because Fast</div>
+<div class="raster _1"></div>
+<div class="raster _2"></div>
+<div class="raster _3"></div>
+<div class="raster _4"></div>
+<div class="raster _5"></div>
+<div class="raster _6"></div>
